@@ -99,9 +99,10 @@ header .navegacion a{
     padding-bottom: 80px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.878);
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     color: #19a7ce;
+    font-size: 24px;
 }
 
 .mangas2{
@@ -109,22 +110,26 @@ header .navegacion a{
     padding-bottom: 80px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.878);
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     color: #19a7ce;
+    font-size: 24px;
 }
 
 .mangas3{
     font-family: "Alata", sans-serif;
     display: flex;
     background-color: rgba(0, 0, 0, 0.878);
-    justify-content: center;
+    justify-content: space-around;
     text-align:center;
     color: #19a7ce;
+    font-size: 24px;
     padding-bottom: 50px;
 }
 
-.mangas button, .mangas2 button, .mangas3 button{
+.mangas button,
+.mangas2 button,
+.mangas3 button{
     padding: 6px;
     margin: 20px;
     border-radius: 7px;
@@ -134,7 +139,9 @@ header .navegacion a{
     border-color: #146C94 ;
 }
 
-.mangas button:hover, .mangas2 button:hover, .mangas3 button:hover{
+.mangas button:hover,
+.mangas2 button:hover,
+.mangas3 button:hover{
     padding: 6px 10px 6px 10px;
     border-color: gold;
 }
@@ -144,6 +151,7 @@ header .navegacion a{
     margin: 10px 100px 10px 100px;
     height: 300px;
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    object-fit: cover;
 }
 
 .imgManga:hover{
@@ -220,14 +228,16 @@ footer p{
     box-sizing: border-box;
 }
 
-form .username, form .contrasena{
+form .username,
+form .contrasena{
     position: relative;
     border-bottom: 2px solid #19a7ce;
     margin: 30px 0;
     padding: 9px;
 }
 
-.username input, .contrasena input{
+.username input,
+.contrasena input{
     font-family: "Alata", sans-serif;
     width: 100%;
     padding: 0 5px;
@@ -236,7 +246,8 @@ form .username, form .contrasena{
     background: none;
     outline: none;
 }
-.username input::placeholder, .contrasena input::placeholder{
+.username input::placeholder,
+.contrasena input::placeholder{
     color: rgba(255, 255, 255, 0.338);
 }
 
@@ -309,6 +320,8 @@ span input{
     margin: 10px 50px 10px 50px;
     height: 300px;
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    object-fit: cover;
+    
 }
 
 /*CONTACTO STYLE*/
@@ -442,6 +455,40 @@ span input{
 
 .footerAyuda{
     background-color: rgba(0, 0, 0, 0.654);
+}
+
+@media (max-width: 1500xp) {
+    .imgMangaTP{
+        padding-left: 10px;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .mangas,
+    .mangas2,
+    .mangas3{
+        flex-direction: column;
+    }
+
+    span input{
+        object-fit: cover;
+        width: 90%;
+        height: 100%;
+        padding-right:0px;
+    }
+}
+
+@media (max-width: 480px){
+    header{
+        flex-direction: column;
+    }
+
+    .tituloManga h1{
+        font-size: 50px;
+    }
+
 }
 
 
