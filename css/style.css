@@ -148,7 +148,7 @@ header .navegacion a{
 
 .imgManga{
     width: 200px;
-    margin: 10px 100px 10px 100px;
+    margin: 10px 50px 10px 50px;
     height: 300px;
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
     object-fit: cover;
@@ -321,7 +321,6 @@ span input{
     height: 300px;
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
     object-fit: cover;
-    
 }
 
 /*CONTACTO STYLE*/
