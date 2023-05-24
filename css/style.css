@@ -97,7 +97,7 @@ header .navegacion a{
     font-family: "Alata", sans-serif;
     padding-top: 50px;
     padding-bottom: 80px;
-    display: flex;
+    display:flex;
     background-color: rgba(0, 0, 0, 0.878);
     justify-content: space-around;
     text-align: center;
@@ -326,9 +326,10 @@ span input{
 
 /*CONTACTO STYLE*/
 .mainContacto{
-    display: flex;
-    justify-content: space-between;
-    margin: 125px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    margin-top: 60px;
 }
 .contactoBody{
     background-image: url(../assets/img/fondo2.jpg);
@@ -339,6 +340,7 @@ span input{
     font-family: "Alata", sans-serif;
     color: #ffffff;
     border-radius: 40px;
+    margin-left: 20%;
 }
 
 .contactanos h1{
@@ -380,11 +382,9 @@ span input{
 }
 
 .mapa iframe{
-    width: 800px;
-    height: 640px;
+    width: 100%;
+    height: 100%;
     padding: 15px;
-    position: relative;
-    top: 10px;
     border: #146C94;
     background-color: #146C94;
 }
@@ -468,7 +468,7 @@ span input{
     .mangas,
     .mangas2,
     .mangas3{
-        flex-direction: column;
+        flex-direction:column;
     }
 
     span input{
@@ -476,6 +476,13 @@ span input{
         width: 80%;
         height: 100%;
         padding-right:0px;
+    }
+    .mainContacto{
+        margin-bottom: 60px;
+    }
+
+    .contactanos{
+        margin-left: 0px;
     }
 }
 
@@ -486,6 +493,25 @@ span input{
 
     .navegacion ul{
         display: flex;
+    }
+
+    .contactanos{
+        width: 350px;
+        height: 550px;
+    }
+
+    .contactanos div{
+        padding-top: 50px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+    .contactanos img{
+        width: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: 14px;
     }
 
 }
@@ -517,6 +543,31 @@ span input{
         width: 370px;
     }
 
+    .contactanos{
+        margin-left: 15%;
+    }
+
+    .mapa iframe{
+        width: 0%;
+        height: 0%;
+        padding: 0px;
+        border: #ffffff00;
+        background-color: #ffffff00;
+    }
+
+    .todosProductos{
+        justify-content: center;
+        padding: 0px;
+        padding-bottom: 20px;
+
+    }
+
+}
+
+@media (max-width: 375px){
+    .contactanos{
+        margin-left: 6%;
+    }
 }
 
 @media (max-width: 320px){
@@ -530,6 +581,17 @@ span input{
         width: 300px;
     }
 
+    .contactanos{
+        margin-left: 6%;
+        width: 300px;
+        height: 500px;
+    }
+
+    .contactanos div{
+        padding-top: 40px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
 }
 
 
