@@ -3,13 +3,8 @@
 }
 
 .mangas3{
-    font-family: "Alata", sans-serif;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.878);
-    justify-content: space-around;
-    text-align:center;
-    color: $color-principal;
-    font-size: 24px;
+    @extend .mangas;
+    padding-top: 0;
     padding-bottom: 50px;
 }
 
@@ -36,12 +31,5 @@ span{
 }
 
 .imgMangaTP{
-    width: 200px;
-    margin: 10px 50px 10px 50px;
-    height: 300px;
-    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-    object-fit: cover;
-    &:hover{
-        box-shadow: $color-secundario 0px 5px 15px;
-    }
+    @extend .imgManga;
 }

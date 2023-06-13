@@ -3,35 +3,25 @@
 }
 
 .masPopular{
-    font-family: "Alata", sans-serif;
-    text-align: center;
+    @include text("Alata", center, $color-principal );
     padding-top: 65px;
     padding-bottom: 0px;
     background-color: rgb(0, 0, 0, 0.878);
-    color: $color-principal;
 }
 
 .mangas{
-    font-family: "Alata", sans-serif;
+    @include text("Alata", center, $color-principal );
     padding-top: 50px;
     padding-bottom: 80px;
     display:flex;
     background-color: rgba(0, 0, 0, 0.878);
     justify-content: space-around;
-    text-align: center;
-    color: $color-principal;
     font-size: 24px;
 }
 
 .mangas2{
-    font-family: "Alata", sans-serif;
-    padding-bottom: 80px;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.878);
-    justify-content: space-around;
-    text-align: center;
-    color: $color-principal;
-    font-size: 24px;
+    @extend .mangas;
+    padding-top: 0px;
 }
 
 .imgManga{

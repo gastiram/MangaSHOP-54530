@@ -98,45 +98,38 @@ footer p {
 }
 
 .masPopular {
-  font-family: "Alata", sans-serif;
+  font-family: "Alata";
   text-align: center;
+  color: #19a7ce;
   padding-top: 65px;
   padding-bottom: 0px;
   background-color: rgba(0, 0, 0, 0.878);
-  color: #19a7ce;
 }
 
-.mangas {
-  font-family: "Alata", sans-serif;
+.mangas, .mangas3, .mangas2 {
+  font-family: "Alata";
+  text-align: center;
+  color: #19a7ce;
   padding-top: 50px;
   padding-bottom: 80px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.878);
   justify-content: space-around;
-  text-align: center;
-  color: #19a7ce;
   font-size: 24px;
 }
 
 .mangas2 {
-  font-family: "Alata", sans-serif;
-  padding-bottom: 80px;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.878);
-  justify-content: space-around;
-  text-align: center;
-  color: #19a7ce;
-  font-size: 24px;
+  padding-top: 0px;
 }
 
-.imgManga {
+.imgManga, .imgMangaTP {
   width: 200px;
   margin: 10px 50px 10px 50px;
   height: 300px;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   object-fit: cover;
 }
-.imgManga:hover {
+.imgManga:hover, .imgMangaTP:hover {
   box-shadow: #146C94 0px 5px 15px;
 }
 
@@ -163,13 +156,7 @@ footer p {
 }
 
 .mangas3 {
-  font-family: "Alata", sans-serif;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.878);
-  justify-content: space-around;
-  text-align: center;
-  color: #19a7ce;
-  font-size: 24px;
+  padding-top: 0;
   padding-bottom: 50px;
 }
 
@@ -194,17 +181,6 @@ span input {
   padding-left: 40px;
   font-size: 25px;
   border-radius: 15px;
-}
-
-.imgMangaTP {
-  width: 200px;
-  margin: 10px 50px 10px 50px;
-  height: 300px;
-  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-  object-fit: cover;
-}
-.imgMangaTP:hover {
-  box-shadow: #146C94 0px 5px 15px;
 }
 
 .bodyInicio {
@@ -406,6 +382,7 @@ input[type=submit]:hover {
   .mangas2,
   .mangas3 {
     flex-direction: column;
+    padding-bottom: 0px;
   }
   span input {
     object-fit: cover;
