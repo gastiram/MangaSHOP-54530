@@ -349,24 +349,20 @@ span input {
   border-radius: 40px;
   margin-left: 20%;
 }
-
 .contactanos h2 {
   text-align: center;
   padding-top: 30px;
   font-size: 30px;
 }
-
 .contactanos div {
   padding-top: 70px;
   padding-left: 15px;
   font-size: 20px;
 }
-
 .contactanos div a {
   text-decoration: none;
   color: white;
 }
-
 .contactanos img {
   width: 60px;
   padding-left: 10px;
@@ -374,17 +370,16 @@ span input {
   position: relative;
   top: 14px;
 }
-
-.contactoVolver img {
-  width: 50px;
-}
-
 .contactanos p {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   padding-top: 20px;
   text-align: center;
   padding-bottom: 5px;
+}
+
+.contactoVolver img {
+  width: 50px;
 }
 
 .mapa iframe {
