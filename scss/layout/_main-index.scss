@@ -1,0 +1,65 @@
+.mainBody{
+    background-image: $background-principal;
+}
+
+.masPopular{
+    font-family: "Alata", sans-serif;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 0px;
+    background-color: rgb(0, 0, 0, 0.878);
+    color: $color-principal;
+}
+
+.mangas{
+    font-family: "Alata", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.878);
+    justify-content: space-around;
+    text-align: center;
+    color: $color-principal;
+    font-size: 24px;
+}
+
+.mangas2{
+    font-family: "Alata", sans-serif;
+    padding-bottom: 80px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.878);
+    justify-content: space-around;
+    text-align: center;
+    color: $color-principal;
+    font-size: 24px;
+}
+
+.imgManga{
+    width: 200px;
+    margin: 10px 50px 10px 50px;
+    height: 300px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    object-fit: cover;
+    &:hover{
+        box-shadow: $color-secundario 0px 5px 15px;
+    }
+}
+
+
+.todosProductos{
+    background-color: rgba(0, 0, 0, 0.878);
+    font-family: "Alata", sans-serif;
+    color: $color-principal;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    a{
+        text-decoration: none;
+        font-family: "Alata", sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        background-color: $color-secundario;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}

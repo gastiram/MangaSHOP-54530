@@ -1,0 +1,40 @@
+.BodyAyuda{
+    background-image: $background-secundario;
+}
+.ayudaMain{
+    font-family: "Alata", sans-serif;
+    padding:100px 300px 100px 300px;
+    h2{
+        color: $color-principal;
+        font-size: 45px;
+    }
+}
+
+.ayudaSection{
+    background-color: $color-secundario;
+    padding: 20px;
+    border-radius: 30px;
+    form p{
+        padding-top: 20px;
+    }
+    form label{
+        text-decoration: underline;
+    }
+    a{
+        position: relative;
+        top: 10px;
+        img{
+            width: 20px;
+        }
+    }
+}
+
+.ayudaSection form textarea,
+.ayudaSection form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid $color-principal;
+}

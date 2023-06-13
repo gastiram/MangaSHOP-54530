@@ -1,0 +1,26 @@
+@media (max-width: 1024px){
+    .mangas,
+    .mangas2,
+    .mangas3{
+        flex-direction:column;
+    }
+
+    span input{
+        object-fit: cover;
+        width: 80%;
+        height: 100%;
+        padding-right:0px;
+    }
+    .mainContacto{
+        margin-bottom: 60px;
+    }
+
+    .contactanos{
+        margin-left: 0px;
+    }
+
+    .ayudaMain{
+        padding: 50px 150px 50px 150px;
+    }
+}
+

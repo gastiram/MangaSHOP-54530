@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.mainBody {
+  background-image: url(../assets/img/fondo.jpg);
+}
+
+.todosProductosBody {
+  background-image: url(../assets/img/fondo.jpg);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -67,36 +75,6 @@ header .navegacion a {
   color: #19a7ce;
 }
 
-footer {
-  color: #19a7ce;
-  background-color: rgba(0, 0, 0, 0.972);
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 20px;
-}
-footer ul li {
-  padding: 10px;
-}
-footer ul li a {
-  text-decoration: none;
-  color: #19a7ce;
-  font-family: "Alata", sans-serif;
-}
-footer p {
-  color: #146C94;
-}
-
-.footerAyuda {
-  background-color: rgba(0, 0, 0, 0.654);
-}
-
-.mainBody {
-  background-image: url(../assets/img/fondo.jpg);
-}
-
 .masPopular {
   font-family: "Alata", sans-serif;
   text-align: center;
@@ -129,6 +107,35 @@ footer p {
   font-size: 24px;
 }
 
+.mangas3 {
+  font-family: "Alata", sans-serif;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.878);
+  justify-content: space-around;
+  text-align: center;
+  color: #19a7ce;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+.mangas button,
+.mangas2 button,
+.mangas3 button {
+  padding: 6px;
+  margin: 20px;
+  border-radius: 7px;
+  color: white;
+  font-family: "Alata", sans-serif;
+  background-color: #146C94;
+  border-color: #146C94;
+}
+.mangas button:hover,
+.mangas2 button:hover,
+.mangas3 button:hover {
+  padding: 6px 10px 6px 10px;
+  border-color: gold;
+}
+
 .imgManga {
   width: 200px;
   margin: 10px 50px 10px 50px;
@@ -158,55 +165,29 @@ footer p {
   padding: 8px;
 }
 
-.todosProductosBody {
-  background-image: url(../assets/img/fondo.jpg);
-}
-
-.mangas3 {
-  font-family: "Alata", sans-serif;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.878);
-  justify-content: space-around;
-  text-align: center;
+footer {
   color: #19a7ce;
-  font-size: 24px;
-  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.972);
 }
-
-.buscador {
-  background-color: rgba(0, 0, 0, 0.8980392157);
-  padding: 20px 0px 20px 70px;
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px;
 }
-
-span {
-  width: 100px;
+footer ul li {
+  padding: 10px;
 }
-span input {
-  width: 350px;
-  height: 50px;
-  background-image: url(../assets/img/lupa.png);
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position-x: 5px;
-  border: none;
+footer ul li a {
+  text-decoration: none;
+  color: #19a7ce;
   font-family: "Alata", sans-serif;
-  padding-left: 40px;
-  font-size: 25px;
-  border-radius: 15px;
+}
+footer p {
+  color: #146C94;
 }
 
-.imgMangaTP {
-  width: 200px;
-  margin: 10px 50px 10px 50px;
-  height: 300px;
-  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
-  object-fit: cover;
-}
-.imgMangaTP:hover {
-  box-shadow: #146C94 0px 5px 15px;
-}
-
+/*INICIO SESION STYLE*/
 .bodyInicio {
   background-image: url(../assets/img/fondo2.jpg);
   font-family: "Alata", sans-serif;
@@ -293,6 +274,39 @@ input[type=submit]:hover {
   width: 25px;
 }
 
+/*TODOS LOS PRODUCTOS STYLE*/
+.buscador {
+  background-color: rgba(0, 0, 0, 0.8980392157);
+  padding: 20px 0px 20px 70px;
+}
+
+span {
+  width: 100px;
+}
+span input {
+  width: 350px;
+  height: 50px;
+  background-image: url(../assets/img/lupa.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 5px;
+  border: none;
+  font-family: "Alata", sans-serif;
+  padding-left: 40px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.imgMangaTP {
+  width: 200px;
+  margin: 10px 50px 10px 50px;
+  height: 300px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  object-fit: cover;
+}
+
+/*CONTACTO STYLE*/
 .mainContacto {
   display: grid;
   width: 100%;
@@ -353,6 +367,7 @@ input[type=submit]:hover {
   background-color: #146C94;
 }
 
+/*AYUDA STYLE*/
 .BodyAyuda {
   background-image: url(../assets/img/fondo2.jpg);
 }
@@ -386,13 +401,35 @@ input[type=submit]:hover {
 }
 
 .ayudaSection form textarea,
-.ayudaSection form input {
+.ayudaSection form input,
+.ayudaSection form button {
   width: 100%;
   padding: 10px;
   border: none;
   background: none;
   outline: none;
   border-bottom: 1px solid #19a7ce;
+}
+
+.ayudaSection form button {
+  background: #19a7ce;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 15px;
+  font-family: "Alata", sans-serif;
+  font-size: 16px;
+}
+.ayudaSection form button:hover {
+  cursor: pointer;
+  padding: 17px;
+  background-color: #1977ce;
+  border-color: #1977ce;
+  color: white;
+  transition: 0.5s;
+}
+
+.footerAyuda {
+  background-color: rgba(0, 0, 0, 0.654);
 }
 
 @media (max-width: 1500xp) {
@@ -419,10 +456,11 @@ input[type=submit]:hover {
   .contactanos {
     margin-left: 0px;
   }
-  .ayudaMain {
-    padding: 50px 150px 50px 150px;
-  }
 }
+.ayudaMain {
+  padding: 50px 150px 50px 150px;
+}
+
 @media (max-width: 768px) {
   .tituloManga h1 {
     font-size: 70px;
@@ -525,46 +563,6 @@ input[type=submit]:hover {
   .ayudaMain {
     padding: 15px 30px 15px 30px;
   }
-}
-.mangas button,
-.mangas2 button,
-.mangas3 button {
-  padding: 6px;
-  margin: 20px;
-  border-radius: 7px;
-  color: white;
-  font-family: "Alata", sans-serif;
-  background-color: #146C94;
-  border-color: #146C94;
-}
-.mangas button:hover,
-.mangas2 button:hover,
-.mangas3 button:hover {
-  padding: 6px 10px 6px 10px;
-  border-color: gold;
-}
-
-.ayudaSection form button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 1px solid #19a7ce;
-  background: #19a7ce;
-  border-radius: 50px;
-  text-transform: uppercase;
-  padding: 15px;
-  font-family: "Alata", sans-serif;
-  font-size: 16px;
-}
-.ayudaSection form button:hover {
-  cursor: pointer;
-  padding: 17px;
-  background-color: #1977ce;
-  border-color: #1977ce;
-  color: white;
-  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

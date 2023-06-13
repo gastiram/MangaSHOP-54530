@@ -1,0 +1,61 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.972);
+    padding: 20px;
+    a{
+        font-family: "Alata", sans-serif;
+        color: $color-principal;
+        text-decoration: none;
+        h1{
+            font-size: 80px;
+            padding:10px 10px 0px 10px;
+        }
+    }
+    .inicioCarrito{
+        display: flex;
+        justify-content: end;
+    }
+    .inicio a{
+        background-color: $color-secundario;
+        font-family: "Alata", sans-serif;
+        color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        text-decoration: none;
+    }
+    .carrito{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 5px;
+        padding-top: 2px;
+        margin-left: 15px;
+        margin-right: 10px;
+        background-color: $color-secundario;
+        .carritoContador{
+            font-family: "Alata", sans-serif;
+            color: white;
+            text-decoration: none;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        img{
+            width: 21px;
+        }
+    }
+    .navegacion{
+        list-style: none;
+        padding-top: 65px;
+        li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        a{
+            font-family: "Alata", sans-serif;
+            text-decoration: none;
+            font-size: 20px;
+            color: $color-principal;
+        }
+    }
+}

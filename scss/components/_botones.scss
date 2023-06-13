@@ -1,0 +1,38 @@
+.mangas button,
+.mangas2 button,
+.mangas3 button{
+    padding: 6px;
+    margin: 20px;
+    border-radius: 7px;
+    color: white;
+    font-family: "Alata",sans-serif;
+    background-color: $color-secundario;
+    border-color: $color-secundario ;
+    &:hover{
+        padding: 6px 10px 6px 10px;
+        border-color: gold;
+    }
+}
+
+.ayudaSection form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid $color-principal;
+    background: $color-principal ;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: "Alata", sans-serif;
+    font-size: 16px;
+    &:hover{
+        cursor: pointer;
+    padding: 17px;
+    background-color: #1977ce;
+    border-color:#1977ce ;
+    color: white;
+    transition: 0.5s;
+    }
+}
