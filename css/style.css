@@ -400,13 +400,14 @@ span input {
   background-image: url(../assets/img/fondo2.jpg);
 }
 
-.ayudaBody {
+.ayudaMain {
   font-family: "Alata", sans-serif;
   padding: 100px 300px 100px 300px;
 }
 
-.ayudaBody h1 {
+.ayudaMain h2 {
   color: #19a7ce;
+  font-size: 45px;
 }
 
 .ayudaSection {
@@ -490,6 +491,10 @@ span input {
     margin-left: 0px;
   }
 }
+.ayudaMain {
+  padding: 50px 150px 50px 150px;
+}
+
 @media (max-width: 768px) {
   .tituloManga h1 {
     font-size: 70px;
@@ -512,6 +517,9 @@ span input {
     padding-right: 10px;
     position: relative;
     top: 14px;
+  }
+  .ayudaMain h2 {
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
@@ -551,10 +559,20 @@ span input {
     padding: 0px;
     padding-bottom: 20px;
   }
+  .ayudaMain {
+    padding: 25px 60px 25px 60px;
+  }
+  .ayudaMain h2 {
+    font-size: 27px;
+    text-align: center;
+  }
 }
 @media (max-width: 375px) {
   .contactanos {
     margin-left: 6%;
+  }
+  .ayudaMain {
+    padding: 20px 45px 20px 45px;
   }
 }
 @media (max-width: 320px) {
@@ -575,6 +593,9 @@ span input {
     padding-top: 40px;
     padding-left: 15px;
     font-size: 15px;
+  }
+  .ayudaMain {
+    padding: 15px 30px 15px 30px;
   }
 }
 
