@@ -91,6 +91,9 @@ footer p {
 
 .footerAyuda {
   background-color: rgba(0, 0, 0, 0.654);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .mainBody {
@@ -131,6 +134,7 @@ footer p {
 }
 .imgManga:hover, .imgMangaTP:hover {
   box-shadow: #146C94 0px 5px 15px;
+  cursor: pointer;
 }
 
 .todosProductos {
@@ -331,6 +335,8 @@ input[type=submit]:hover {
 
 .BodyAyuda {
   background-image: url(../assets/img/fondo2.jpg);
+  position: relative;
+  padding-bottom: 15em;
 }
 
 .ayudaMain {
@@ -479,6 +485,14 @@ input[type=submit]:hover {
   .ayudaMain {
     padding: 20px 45px 20px 45px;
   }
+  .formulario {
+    top: 200px;
+    width: 300px;
+  }
+  .formulario form {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
 }
 @media (max-width: 320px) {
   .tituloManga h1 {
@@ -519,6 +533,7 @@ input[type=submit]:hover {
 .mangas3 button:hover {
   padding: 6px 10px 6px 10px;
   border-color: gold;
+  cursor: pointer;
 }
 
 .ayudaSection form button {
