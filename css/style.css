@@ -100,34 +100,75 @@ footer p {
   background-image: url(../assets/img/fondo.jpg);
 }
 
-.masPopular {
+.carrusel {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.878);
+  display: flex;
+  overflow: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card {
+  margin-right: 50px;
+  position: relative;
+}
+.card img {
+  width: 300px;
+  object-fit: cover;
+  height: 400px;
+}
+
+.cuerpo-card {
+  position: absolute;
+  bottom: 4px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.808);
+  font-family: "Alata";
+  text-align: center;
+  color: #19a7ce;
+}
+.cuerpo-card h3 {
+  margin: 0;
+}
+
+.ofertas, .masPopulares {
   font-family: "Alata";
   text-align: center;
   color: #19a7ce;
   padding-top: 65px;
   padding-bottom: 0px;
   background-color: rgba(0, 0, 0, 0.878);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.mangas, .mangas3, .mangas2 {
+.mangas, .mangas3, .mangas2a, .mangas2 {
   font-family: "Alata";
   text-align: center;
   color: #19a7ce;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.878);
-  justify-content: space-around;
+  justify-content: center;
   font-size: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .mangas2 {
   padding-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .imgManga, .imgMangaTP {
   width: 200px;
-  margin: 10px 50px 10px 50px;
+  margin: 10px 90px 10px 90px;
   height: 300px;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   object-fit: cover;
@@ -143,7 +184,7 @@ footer p {
   color: #19a7ce;
   padding: 30px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 .todosProductos a {
   text-decoration: none;
@@ -159,9 +200,38 @@ footer p {
   background-image: url(../assets/img/fondo.jpg);
 }
 
+.mangas1 {
+  font-family: "Alata";
+  text-align: center;
+  color: #19a7ce;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.878);
+  justify-content: center;
+  font-size: 24px;
+  margin: 5px;
+}
+.mangas1 p {
+  font-size: 21px;
+}
+
+.mangas2a {
+  padding-top: 30px;
+  margin: 5px;
+}
+.mangas2a p {
+  font-size: 21px;
+}
+
 .mangas3 {
-  padding-top: 0;
+  padding-top: 30px;
   padding-bottom: 50px;
+  border: 100px;
+  margin: 5px;
+}
+.mangas3 p {
+  font-size: 21px;
 }
 
 .buscador {
@@ -185,6 +255,11 @@ span input {
   padding-left: 40px;
   font-size: 25px;
   border-radius: 15px;
+}
+
+.imgMangaTP {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .bodyInicio {
@@ -385,10 +460,11 @@ input[type=submit]:hover {
 }
 @media (max-width: 1024px) {
   .mangas,
-  .mangas2,
-  .mangas3 {
-    flex-direction: column;
-    padding-bottom: 0px;
+  .mangas2, .mangas2a,
+  .mangas3,
+  .mangas1 {
+    overflow: auto;
+    justify-content: left;
   }
   span input {
     object-fit: cover;
@@ -450,6 +526,26 @@ input[type=submit]:hover {
     padding-bottom: 10px;
     justify-content: center;
   }
+  .carrusel {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .ofertas, .masPopulares {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .mangas1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .mangas, .mangas2, .mangas2a, .mangas3 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .mangas2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .formulario {
     position: relative;
     top: 200px;
@@ -498,6 +594,15 @@ input[type=submit]:hover {
   .tituloManga h1 {
     font-size: 45px;
   }
+  .carrusel {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.878);
+    display: flex;
+  }
+  .card img {
+    width: 200px;
+    height: 300px;
+  }
   .formulario {
     position: relative;
     top: 200px;
@@ -517,7 +622,8 @@ input[type=submit]:hover {
     padding: 15px 30px 15px 30px;
   }
 }
-.mangas button,
+.mangas button, .mangas2a button,
+.mangas1 button,
 .mangas2 button,
 .mangas3 button {
   padding: 6px;
@@ -528,7 +634,8 @@ input[type=submit]:hover {
   background-color: #146C94;
   border-color: #146C94;
 }
-.mangas button:hover,
+.mangas button:hover, .mangas2a button:hover,
+.mangas1 button:hover,
 .mangas2 button:hover,
 .mangas3 button:hover {
   padding: 6px 10px 6px 10px;

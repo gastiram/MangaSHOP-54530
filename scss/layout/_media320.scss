@@ -2,6 +2,18 @@
     .tituloManga h1{
         font-size: 45px;
     }
+    .carrusel{
+        padding: 16px;
+        background-color: rgba(0, 0, 0, 0.878);
+        display: flex;
+        
+    }
+    .card{
+        img{
+            width: 200px;
+            height: 300px;
+        }
+    }
 
     .formulario{
         position:relative;
@@ -25,3 +37,4 @@
         padding: 15px 30px 15px 30px;
     }
 }
+

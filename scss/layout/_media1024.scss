@@ -1,9 +1,10 @@
 @media (max-width: 1024px){
     .mangas,
+    .mangas1,
     .mangas2,
     .mangas3{
-        flex-direction:column;
-        padding-bottom: 0px;
+        overflow: auto;
+        justify-content: left;
     }
 
     span input{

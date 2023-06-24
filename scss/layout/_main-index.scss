@@ -1,32 +1,72 @@
 .mainBody{
     background-image: $background-principal;
 }
+.masPopulares{
+    @extend .ofertas;
+}
+.carrusel{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.878);
+    display: flex;
+    overflow: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 
-.masPopular{
+}
+.card{
+    margin-right: 50px;
+    position: relative;
+    img{
+        width: 300px;
+        object-fit: cover;
+        height: 400px;
+    }
+}
+
+.cuerpo-card{
+    position: absolute;
+    bottom: 4px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    @include text("Alata", center, $color-principal );
+    h3{
+        margin: 0;
+    }
+}
+.ofertas{
     @include text("Alata", center, $color-principal );
     padding-top: 65px;
     padding-bottom: 0px;
     background-color: rgb(0, 0, 0, 0.878);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .mangas{
     @include text("Alata", center, $color-principal );
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     display:flex;
     background-color: rgba(0, 0, 0, 0.878);
-    justify-content: space-around;
+    justify-content: center;
     font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .mangas2{
     @extend .mangas;
     padding-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .imgManga{
     width: 200px;
-    margin: 10px 50px 10px 50px;
+    margin: 10px 90px 10px 90px;
     height: 300px;
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
     object-fit: cover;
@@ -43,7 +83,7 @@
     color: $color-principal;
     padding: 30px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     a{
         text-decoration: none;
         font-family: "Alata", sans-serif;
